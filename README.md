@@ -1,58 +1,112 @@
 # Shakir Hussain — Portfolio Website
 
-Yeh folder Shakir Hussain (Full Stack Developer) ke portfolio website ki complete files hain.
+This is the complete portfolio website of **Shakir Hussain**, a Full Stack Developer.
 
-## Folder Structure
-```
+## Project Structure
+
+```text
 portfolio-package/
-├── index.html          → main page
+├── index.html              # Main website page
 ├── css/
-│   └── style.css        → sara styling yahan hai
+│   └── style.css           # Website styling
 ├── js/
-│   └── script.js        → project image slider ka logic
+│   └── script.js           # Project image slider functionality
 ├── images/
-│   ├── shakir-photo.jpg → hero section ki photo (placeholder)
-│   └── project*-shot*.jpg → har project ki 3 images (placeholder)
-└── README.md            → yeh file
+│   ├── shakir-photo.jpg    # Profile photo
+│   └── project*-shot*.jpg  # Project screenshots
+└── README.md               # Project information
 ```
 
-## Kaise Use Karein
-1. Poori `portfolio-package` folder ko kisi bhi jagah rakh do.
-2. `index.html` ko double-click karke browser mein khol lo — website chal jayegi.
-3. Online daalne ke liye (GitHub Pages, Netlify, Vercel, Hostinger, waghera) — poori folder upload kar do.
+## How to Run
 
-## Customize Kaise Karein
+No installation or setup is required.
 
-### 1. Apni Photos Lagana
-`images/` folder mein jo files hain unhi naam se apni images replace kar do (same naam rakhna zaroori hai, ya index.html mein path change kar dena):
-- `shakir-photo.jpg` → Shakir ki asli professional photo
-- `project1-shot1.jpg`, `project1-shot2.jpg`, `project1-shot3.jpg` → Project 1 ki screenshots
-- `project2-shot1.jpg` se `project2-shot3.jpg` → Project 2 ki screenshots
-- `project3-shot1.jpg` se `project3-shot3.jpg` → Project 3 ki screenshots
+1. Download or copy the complete `portfolio-package` folder.
+2. Open the folder.
+3. Double-click `index.html`.
+4. The portfolio will open in your web browser.
 
-Best size: photo ke liye ~640×480px, project screenshots ke liye ~800×450px (16:9).
+You can also upload the complete folder to platforms such as **GitHub Pages, Netlify, Vercel, or Hostinger** to publish the website online.
 
-### 2. Text/Content Change Karna
-`index.html` file kisi bhi text editor (Notepad, VS Code) mein kholo aur yeh cheezein dhoondo:
-- **Projects** — "Project One/Two/Three", description, aur tech tags (`<span>React</span>` waghera)
-- **Experience** — company names, dates, role descriptions
-- **Contact** — email, GitHub link, LinkedIn link (`href="#"` ko apne real links se replace karo)
-- **About section** — bio text
-- **"X+ years"** — actual experience ka number
+## Customization
 
-### 3. Colors Change Karna
-`css/style.css` file ke shuru mein `:root` section hai jahan sab colors defined hain:
+### 1. Replace Images
+
+Go to the `images/` folder and replace the placeholder images with your own images.
+
+Keep the same file names, or update the image paths in `index.html`.
+
+* `shakir-photo.jpg` → Your professional profile photo
+* `project1-shot1.jpg` → Project 1 screenshot
+* `project1-shot2.jpg` → Project 1 screenshot
+* `project1-shot3.jpg` → Project 1 screenshot
+* `project2-shot1.jpg` → Project 2 screenshot
+* `project2-shot2.jpg` → Project 2 screenshot
+* `project2-shot3.jpg` → Project 2 screenshot
+* `project3-shot1.jpg` → Project 3 screenshot
+* `project3-shot2.jpg` → Project 3 screenshot
+* `project3-shot3.jpg` → Project 3 screenshot
+
+Recommended image sizes:
+
+* Profile photo: around **640 × 480 px**
+* Project screenshots: around **800 × 450 px (16:9)**
+
+### 2. Update Website Content
+
+Open `index.html` in VS Code or any text editor to update:
+
+* Project names and descriptions
+* Technologies used in each project
+* Experience and job details
+* About section
+* Email address
+* GitHub profile link
+* LinkedIn profile link
+* Experience/years information
+
+Replace any placeholder links such as `href="#"` with your actual links.
+
+### 3. Change Colors
+
+All main website colors are defined at the beginning of `css/style.css` inside the `:root` section.
+
 ```css
---ink:#0F1B2D;      /* dark text/headings */
---paper:#F1EEF7;    /* background */
---brass:#B8875B;    /- accent color */
---lilac:#C9BFE8;    /* pastel purple */
---mint:#A9D4C3;     /* pastel green */
---peach:#F0C9A8;    /* pastel orange */
+--ink: #0F1B2D;
+--paper: #F1EEF7;
+--brass: #B8875B;
+--lilac: #C9BFE8;
+--mint: #A9D4C3;
+--peach: #F0C9A8;
 ```
-Inhe change karke poori site ka color theme badal sakte ho.
+
+Change these values to create your own color theme.
+
+## Features
+
+* Responsive portfolio design
+* About section
+* Skills and technologies
+* Projects showcase
+* Project image slider
+* Experience section
+* Contact section
+* GitHub and LinkedIn links
+* Clean and modern UI
+
+## Technologies
+
+* HTML5
+* CSS3
+* JavaScript
+* Google Fonts
 
 ## Notes
-- Yeh site pure HTML/CSS/JS mein hai — koi framework install karne ki zaroorat nahi.
-- Project slider ka code `js/script.js` mein hai, dots aur arrows dono kaam karte hain.
-- Fonts (Fraunces, IBM Plex Sans, IBM Plex Mono) Google Fonts se load hote hain — internet chahiye first load pe.
+
+This portfolio is built using **HTML, CSS, and JavaScript** only.
+
+No framework or package installation is required.
+
+The project image slider is controlled by `js/script.js` and includes both **navigation arrows and dots**.
+
+Google Fonts are loaded from the internet, so an internet connection is required for the fonts to load correctly.
